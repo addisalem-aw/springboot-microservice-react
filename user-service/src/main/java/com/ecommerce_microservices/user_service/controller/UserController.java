@@ -2,26 +2,35 @@ package com.ecommerce_microservices.user_service.controller;
 
 import com.ecommerce_microservices.user_service.model.User;
 import com.ecommerce_microservices.user_service.service.UserService;
+
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import jakarta.annotation.PostConstruct;
+
 
 @RestController
-@RequestMapping("/api/users")
+@RequestMapping("/users")
 public class UserController {
 
     @Autowired
     private UserService userService;
 
-    @GetMapping("/ping")
-    public String ping() {
-       return "pong";
+    @PostConstruct
+    public void init() {
+    System.out.println(">>> UserController loaded <<<");
     }
 
 
-    @PostMapping
+    @PostMapping("/user")
     public User createUser(@RequestBody User user) {
         System.out.println("Received register request: " + user);
         return userService.createUser(user);
+    }
+    @GetMapping()
+    public List<User> getAllUsers() {
+        return userService.getAllUsers();
     }
 
     @GetMapping("/{username}")

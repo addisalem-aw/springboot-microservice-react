@@ -1,6 +1,6 @@
-package com.example.orderservice.repository;
+package com.ecommerce_microservices.order_service.repository;
 
-import com.example.orderservice.model.Order;
+import com.ecommerce_microservices.order_service.model.Order;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface OrderRepository extends MongoRepository<Order, String> {

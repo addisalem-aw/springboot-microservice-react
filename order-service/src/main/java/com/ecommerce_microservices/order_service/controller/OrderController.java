@@ -1,7 +1,7 @@
-package com.example.orderservice.controller;
+package com.ecommerce_microservices.order_service.controller;
 
-import com.example.orderservice.model.Order;
-import com.example.orderservice.service.OrderService;
+import com.ecommerce_microservices.order_service.model.Order;
+import com.ecommerce_microservices.order_service.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,7 +14,7 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
-    @PostMapping
+    @PostMapping("/order")
     public Order createOrder(@RequestBody Order order) {
         return orderService.createOrder(order);
     }

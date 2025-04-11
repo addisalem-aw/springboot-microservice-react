@@ -1,7 +1,7 @@
-package com.example.productservice.service;
+package com.ecommerce_microservices.product_service.service;
 
-import com.example.productservice.model.Product;
-import com.example.productservice.repository.ProductRepository;
+import com.ecommerce_microservices.product_service.model.Product;
+import com.ecommerce_microservices.product_service.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

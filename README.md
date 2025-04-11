@@ -60,5 +60,8 @@ Ensure your application.properties / application.yml files are configured proper
 
  Start MongoDB
 net start MongoDB
+Structure of the Project
+
+![alt text](image.png)
 
  

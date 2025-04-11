@@ -1,4 +1,4 @@
-package com.example.userservice.model;
+package com.ecommerce_microservices.user_service.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

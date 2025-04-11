@@ -1,12 +1,13 @@
-package com.example.productservice.controller;
+package com.ecommerce_microservices.product_service.controller;
 
-import com.example.productservice.model.Product;
-import com.example.productservice.service.ProductService;
+import com.ecommerce_microservices.product_service.model.Product;
+import com.ecommerce_microservices.product_service.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/products")
 public class ProductController {
@@ -14,7 +15,7 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @PostMapping
+    @PostMapping("/product")
     public Product createProduct(@RequestBody Product product) {
         return productService.createProduct(product);
     }

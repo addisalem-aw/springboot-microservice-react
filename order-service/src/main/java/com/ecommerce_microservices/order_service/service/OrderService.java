@@ -1,7 +1,7 @@
-package com.example.orderservice.service;
+package com.ecommerce_microservices.order_service.service;
 
-import com.example.orderservice.model.Order;
-import com.example.orderservice.repository.OrderRepository;
+import com.ecommerce_microservices.order_service.model.Order;
+import com.ecommerce_microservices.order_service.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

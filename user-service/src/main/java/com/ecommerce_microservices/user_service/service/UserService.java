@@ -1,7 +1,10 @@
 package com.ecommerce_microservices.user_service.service;
 
 import com.ecommerce_microservices.user_service.model.User;
-importcom.ecommerce_microservices.user_service.repository.UserRepository;
+import com.ecommerce_microservices.user_service.repository.UserRepository;
+
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,5 +24,9 @@ public class UserService {
 
     public void deleteUser(String id) {
         userRepository.deleteById(id);
+    }
+
+    public List<User> getAllUsers() {
+        return userRepository.findAll();
     }
 }

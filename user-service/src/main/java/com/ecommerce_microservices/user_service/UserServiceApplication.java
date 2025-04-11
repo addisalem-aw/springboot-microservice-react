@@ -2,14 +2,13 @@ package com.ecommerce_microservices.user_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication
-@ComponentScan(basePackages = "com.ecommerce_microservices.user_service")
+@SpringBootApplication(scanBasePackages = "com.ecommerce_microservices.user_service")
 public class UserServiceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(UserServiceApplication.class, args);
+		System.out.println("main block");
 	}
 
 }
