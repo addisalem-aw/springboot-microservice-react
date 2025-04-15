@@ -62,7 +62,7 @@ Ensure your application.properties / application.yml files are configured proper
 net start MongoDB
 Structure of the Project
 
-Steps to deploy front end to Vercel.
+🚀 Steps to deploy front end to Vercel.
 
 Push your React project to GitHub.
 
@@ -86,7 +86,6 @@ Wait for Vercel to build and deploy your app.
 
 Your app will be live at https://your-project-name.vercel.app.
 
+ 🚀 Deploy the backend services on Render 
 
 ![alt text](image.png)
-
- 
