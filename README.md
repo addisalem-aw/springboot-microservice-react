@@ -62,6 +62,31 @@ Ensure your application.properties / application.yml files are configured proper
 net start MongoDB
 Structure of the Project
 
+Steps to deploy front end to Vercel.
+
+Push your React project to GitHub.
+
+Go to https://vercel.com and sign in with GitHub.
+
+Click "New Project".
+
+Select your React repo from GitHub.
+
+Configure:
+
+Framework: React
+
+Build Command: npm run build
+
+Output Directory: build
+
+Click "Deploy".
+
+Wait for Vercel to build and deploy your app.
+
+Your app will be live at https://your-project-name.vercel.app.
+
+
 ![alt text](image.png)
 
  
